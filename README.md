@@ -1,4 +1,4 @@
-# cryptographic-protocols
+### cryptographic-protocols
 
 
 Zk-SNARKs (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge) and zk-STARKs (Zero-Knowledge Scalable Transparent Argument of Knowledge) are both cryptographic protocols that allow one party (the prover) to prove to another party (the verifier) that they know a certain piece of information, without revealing any information about the actual content of that information.
