@@ -28,3 +28,48 @@ zk-SNARKs protocol:
 zk-STARKs protocol:
 
 ![image](https://user-images.githubusercontent.com/117555665/208236120-3b4d7597-49d4-4e04-affa-afbbf281c772.png)
+
+
+### Some libraries that you can use to implement these proof systems in Rust are:
+
+pairing: a Rust library for working with bilinear pairings, which can be used to implement Groth '16.
+polynomial-commitment: a Rust library for working with polynomial commitments, which can be used to implement Ben-Sasson '18.
+inner-product-polynomials: a Rust library for working with inner product polynomials, which can be used to implement PLONK.
+
+## Groth '16:
+
+Define the statement that you want to prove, and the set of inputs that the prover and verifier will need in order to construct and verify the proof.
+
+Use a library such as pairing to implement the bilinear pairing operations needed for the proof.
+
+Use a library such as rand to generate random values needed for the proof.
+
+Implement the prover's algorithm, which constructs a proof of the statement using the inputs and the bilinear pairing operations.
+
+Implement the verifier's algorithm, which verifies the proof using the inputs and the bilinear pairing operations.
+
+## Ben-Sasson '18:
+
+Define the statement that you want to prove, and the set of inputs that the prover and verifier will need in order to construct and verify the proof.
+
+Use a library such as polynomial-commitment to implement the polynomial commitment operations needed for the proof.
+
+Use a library such as rand to generate random values needed for the proof.
+
+Implement the prover's algorithm, which constructs a proof of the statement using the inputs and the polynomial commitment operations.
+
+Implement the verifier's algorithm, which verifies the proof using the inputs and the polynomial commitment operations.
+
+## PLONK:
+
+Define the statement that you want to prove, and the set of inputs that the prover and verifier will need in order to construct and verify the proof.
+
+Use a library such as inner-product-polynomials to implement the inner product polynomial operations needed for the proof.
+
+Use a library such as rand to generate random values needed for the proof.
+
+Implement the prover's algorithm, which constructs a proof of the statement using the inputs and the inner product polynomial operations.
+
+Implement the verifier's algorithm, which verifies the proof using the inputs and the inner product polynomial operations.
+
+
